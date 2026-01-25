@@ -1,6 +1,12 @@
 const convertBtn = document.getElementById("convert-btn")
 const inputEl = document.getElementById("input-el")
 
+inputEl.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        convertBtn.click();
+    }
+});
+
 convertBtn.addEventListener("click", function() {
     const value = inputEl.value
 

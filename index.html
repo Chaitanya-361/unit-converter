@@ -1,17 +1,23 @@
 <!DOCTYPE HTML>
 
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-                            
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app-wrapper">
         <div class="container">
-            <h3>Metric/Imperial Unit Conversion</h3>
-            <input type="number" id="input-el" placeholder="   Value">
-            <button id="convert-btn">Convert</button>
+            <header>
+                <h3>Metric/Imperial Unit Conversion</h3>
+            </header>
+
+            <div class="input-section">
+                <input type="number" id="input-el" placeholder="20">
+                <button id="convert-btn">Convert</button>
+            </div>
 
             <div class="results">
                 <div class="card">
@@ -35,7 +41,8 @@
                 </div>
             </div>
         </div>
-                            
-        <script src="script.js"></script>
-    </body>
+    </main>
+    <script src="script.js"></script>
+</body>
+
 </html>
